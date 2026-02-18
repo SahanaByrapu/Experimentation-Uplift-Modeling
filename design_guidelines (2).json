@@ -1,0 +1,142 @@
+{
+  "identity": {
+    "name": "E1",
+    "archetype": "Swiss Scientific",
+    "vibe": "Objective, High-Contrast, Precise, Truth-Seeking",
+    "core_principles": [
+      "Data is the hero, UI is the frame.",
+      "Asymmetry creates tension, tension creates interest.",
+      "White space is an active element, not empty space.",
+      "Typography is the primary interface.",
+      "Motion should be instantaneous and micro (0.1s-0.2s)."
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Chivo",
+        "weights": ["700", "900"],
+        "usage": "Page titles, Metric values, Section headers",
+        "cdn": "https://fonts.googleapis.com/css2?family=Chivo:wght@700;900&display=swap"
+      },
+      "body": {
+        "family": "Inter",
+        "weights": ["400", "500", "600"],
+        "usage": "UI text, descriptions, labels",
+        "cdn": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      },
+      "mono": {
+        "family": "JetBrains Mono",
+        "weights": ["400", "500"],
+        "usage": "Statistical data, p-values, confidence intervals, code snippets",
+        "cdn": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+      }
+    },
+    "rules": {
+      "metric_size": "text-5xl or text-6xl tracking-tight",
+      "label_style": "uppercase tracking-widest text-xs font-semibold text-muted-foreground",
+      "p_value_style": "font-mono text-sm"
+    }
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "background": "#FFFFFF",
+      "foreground": "#09090b",
+      "card": "#FFFFFF",
+      "card_foreground": "#09090b",
+      "popover": "#FFFFFF",
+      "popover_foreground": "#09090b",
+      "primary": "#000000",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#f4f4f5",
+      "secondary_foreground": "#18181b",
+      "muted": "#f4f4f5",
+      "muted_foreground": "#71717a",
+      "accent": "#f4f4f5",
+      "accent_foreground": "#18181b",
+      "destructive": "#ef4444",
+      "destructive_foreground": "#fafafa",
+      "border": "#e4e4e7",
+      "input": "#e4e4e7",
+      "ring": "#09090b"
+    },
+    "chart_palette": {
+      "control_group": "#71717a",
+      "variant_group": "#FF3333",
+      "significant_positive": "#10B981",
+      "significant_negative": "#EF4444",
+      "neutral": "#A1A1AA"
+    },
+    "gradients": {
+      "usage": "FORBIDDEN - Use flat colors only."
+    }
+  },
+  "layout": {
+    "grid_system": "Bento Grid (Mode B - High Density)",
+    "container_style": "Sharp edges, 1px border, no shadow (or very subtle shadow-sm)",
+    "spacing": "Comfortable (p-6 or p-8 for cards)",
+    "sidebar": {
+      "width": "w-64",
+      "style": "Fixed left, border-r border-border, bg-background"
+    },
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-4 gap-4"
+  },
+  "components": {
+    "radius": "rounded-none",
+    "shadows": "shadow-none",
+    "borders": "border border-border",
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-none font-medium px-6 py-2",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-none font-medium px-6 py-2",
+      "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-none px-6 py-2"
+    },
+    "cards": {
+      "style": "bg-card text-card-foreground border border-border rounded-none p-6"
+    },
+    "plotly": {
+      "bg_color": "rgba(0,0,0,0)",
+      "font_family": "JetBrains Mono, monospace",
+      "grid_color": "#f4f4f5",
+      "zeroline_color": "#e4e4e7"
+    }
+  },
+  "visual_enhancers": {
+    "icons": "lucide-react (stroke-width=1.5)",
+    "textures": "Subtle noise overlay (opacity 0.02) on background allowed but not required.",
+    "micro_interactions": "Active states must have immediate feedback. Buttons scale down slightly (0.98) on click."
+  },
+  "image_urls": {
+    "hero": "https://images.unsplash.com/photo-1681569685378-4ca075d22f1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwdGVjaCUyMG9mZmljZSUyMGRhdGElMjBhbmFseXNpcyUyMHRlYW18ZW58MHx8fHwxNzcxMzcwMjk1fDA&ixlib=rb-4.1.0&q=85",
+    "abstract_bg": "https://images.unsplash.com/photo-1692607146112-a25194375acb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHw0fHxkaXZlcnNlJTIwcHJvZmVzc2lvbmFsJTIwdGVhbSUyMGF2YXRhcnMlMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzcxMzcwMjk2fDA&ixlib=rb-4.1.0&q=85",
+    "mobile_user": "https://images.unsplash.com/photo-1555662328-fb447beb9e65?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHw0fHxoYXBweSUyMHByb2Zlc3Npb25hbCUyMHdvbWFuJTIwdXNpbmclMjBzbWFydHBob25lJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzEzNzAzMDR8MA&ixlib=rb-4.1.0&q=85",
+    "success_state": "https://images.unsplash.com/photo-1770871820934-daf713c304af?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHByb2Zlc3Npb25hbCUyMHdvbWFuJTIwdXNpbmclMjBzbWFydHBob25lJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzEzNzAzMDR8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "INSTALL FONTS: Add the Google Fonts links to public/index.html or import in index.css immediately.",
+    "CLEANUP: Remove all default 'App.css' styles, especially 'text-align: center' and 'App-header'.",
+    "PLOTLY: Always set 'paper_bgcolor' and 'plot_bgcolor' to 'rgba(0,0,0,0)' to blend with the UI.",
+    "DATA-TESTID: Add data-testid to every button, input, and chart container (e.g., 'primary-conversion-chart').",
+    "LAYOUT: Use a Sidebar Layout. Left sidebar (w-64) + Main Content (flex-1).",
+    "THEME: Default to LIGHT mode. Use sharp corners (rounded-none).",
+    "ICONS: Use Lucide React icons. Import specific icons only.",
+    "ACCESSIBILITY: Ensure text contrast ratios. Use the 'muted-foreground' class for secondary text, but ensure it is readable.",
+    "NO GRADIENTS: Do not use gradients for backgrounds. Use solid flat colors.",
+    "BENTO GRID: Use the Bento Grid 'Mode B' for the main dashboard view. Mix 1x1, 2x1, and 2x2 cards."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. Avoid this.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "You MUST NOT apply universal transition. Eg: transition: all.",
+    "You MUST NOT center align the app container.",
+    "Always use modern button styles like pill-shaped (or sharp in this case).",
+    "NEVER: use AI assistant Emoji characters like 🤖 etc.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Components MUST use named exports.",
+    "Use sonner for toasts."
+  ]
+}
